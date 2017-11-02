@@ -1,0 +1,22 @@
+{
+  "name": "feedme",
+  "version": "1.0.0",
+  "description": "feed me the good foods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armature-corp/feedme.git"
+  },
+  "author": "Team Tesla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armature-corp/feedme/issues"
+  },
+  "homepage": "https://github.com/armature-corp/feedme#readme",
+  "dependencies": {
+    "atlas-connect": "^0.6.6"
+  }
+}
