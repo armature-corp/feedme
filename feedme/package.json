@@ -14,7 +14,6 @@
     "lodash": "4.x.x",
     "mysql": "^2.15.0",
     "strapi": "3.0.0-alpha.6.4",
-    "strapi-bookshelf": "^3.0.0-alpha.6.4",
     "strapi-generate": "3.0.0-alpha.6.4",
     "strapi-generate-api": "3.0.0-alpha.6.4",
     "strapi-mongoose": "3.0.0-alpha.6.4"
@@ -42,5 +41,7 @@
     "node": ">= 7.0.0",
     "npm": ">= 3.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "strapi": "3.0.0-alpha.6.4",
+  "node": "8.4.0"
 }

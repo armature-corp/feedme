@@ -8,7 +8,7 @@
         "host": "armature-feedme.mysql.database.azure.com",
         "port": 3306,
         "database": "feedme_dev",
-        "username": "feedme",
+        "username": "feedme/@armature-feedme",
         "password": "iamhungry!1"
       },
       "options": {}
