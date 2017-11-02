@@ -1,15 +1,15 @@
 {
-  "defaultConnection": "default",
+  "defaultConnection": "dev",
   "connections": {
-    "default": {
-      "connector": "strapi-mongoose",
+    "dev": {
+      "connector": "strapi-bookshelf",
       "settings": {
-        "client": "mongo",
-        "host": "localhost",
-        "port": 27017,
-        "database": "development",
-        "username": "",
-        "password": ""
+        "client": "mysql",
+        "host": "armature-feedme.mysql.database.azure.com",
+        "port": 3306,
+        "database": "feedme_dev",
+        "username": "feedme",
+        "password": "iamhungry!1"
       },
       "options": {}
     }

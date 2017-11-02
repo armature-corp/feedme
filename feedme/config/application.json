@@ -1,6 +1,6 @@
 {
-  "name": "Default Application",
-  "description": "This API is going to be awesome!",
+  "name": "Feedme",
+  "description": "Feedme Api",
   "favicon": {
     "path": "favicon.ico",
     "maxAge": 86400000

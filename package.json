@@ -1,0 +1,19 @@
+{
+  "name": "feedme",
+  "version": "1.0.0",
+  "description": "feed me!",
+  "main": "feedme/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armature-corp/feedme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armature-corp/feedme/issues"
+  },
+  "homepage": "https://github.com/armature-corp/feedme#readme"
+}

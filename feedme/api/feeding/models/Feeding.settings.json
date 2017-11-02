@@ -1,0 +1,21 @@
+{
+  "connection": "dev",
+  "collectionName": "Feedings",
+  "info": {
+    "name": "feeding",
+    "description": ""
+  },
+  "attributes": {
+    "feedingId": {
+      "type": "string",
+      "unique": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date"
+    }
+  }
+}

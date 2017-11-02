@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/feeding",
+      "handler": "Feeding.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/feeding/:_id",
+      "handler": "Feeding.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/feeding",
+      "handler": "Feeding.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/feeding/:_id",
+      "handler": "Feeding.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/feeding/:_id",
+      "handler": "Feeding.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
