@@ -1,44 +1,25 @@
 {
-  "name": "feedme",
+  "name": "my-add-on",
+  "version": "0.0.1",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application.",
-  "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.2",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.8.0"
+  "scripts": {
+    "start": "node app.js"
   },
   "dependencies": {
-    "lodash": "4.x.x",
-    "strapi": "3.0.0-alpha.6.4",
-    "strapi-mongoose": "3.0.0-alpha.6.4",
-    "strapi-generate": "3.0.0-alpha.6.4",
-    "strapi-generate-api": "3.0.0-alpha.6.4"
-  },
-  "main": "./server.js",
-  "scripts": {
-    "start": "node server.js",
-    "strapi": "node_modules/strapi/bin/strapi.js",
-    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
-    "postinstall": "node node_modules/strapi-utils/script/plugin-install.js"
-  },
-  "author": {
-    "name": "hfitzwater",
-    "email": "",
-    "url": ""
-  },
-  "maintainers": [
-    {
-      "name": "hfitzwater",
-      "email": "",
-      "url": ""
-    }
-  ],
-  "engines": {
-    "node": ">= 7.0.0",
-    "npm": ">= 3.0.0"
-  },
-  "license": "MIT"
+    "atlassian-connect-express": "^2.0.0",
+    "atlassian-connect-express-hipchat": "^0.3.5",
+    "atlassian-connect-express-redis": "^0.1.6",
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.14.0",
+    "express-hbs": "^1.0.1",
+    "lodash": "^4.13.1",
+    "morgan": "^1.7.0",
+    "request": "^2.72.0",
+    "rsvp": "^3.2.1",
+    "static-expiry": "^0.0.11",
+    "uuid": "^2.0.2"
+  }
 }
