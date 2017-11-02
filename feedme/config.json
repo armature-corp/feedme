@@ -2,6 +2,7 @@
     // This is the default environment. To change your app to use
     // a different env, set NODE_ENV (http://expressjs.com/api.html#app.configure)
     "development": {
+		"localBaseUrl": "https://c34872f8.ngrok.io", 
         // If you want to test your local running add-on against hipchat.com, you'll
         // need to use a local tunnel tool (we highly recommend https://ngrok.com)
         // to make your local add-on server accessible from the internet. You'll also
