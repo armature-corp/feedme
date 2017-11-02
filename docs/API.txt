@@ -1,0 +1,16 @@
+PUT /api/feeding/start
+	DO		Create new feeding instance.
+	RETURN	Id of new feeding.
+
+PUT /api/feeding/list
+	DO		Get list of venues.
+	RETURN	Venue[]
+	
+PUT /api/feeding/vote
+	BODY	userId	string
+			venueId string
+			
+PUT /api/feeding/end
+	DO		End the current feeding instance.
+			Calculate winning venue.
+	RETURN	FeedingResult
