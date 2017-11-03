@@ -1,9 +1,9 @@
-import { VenueRepo } from 'lib/repositories/venue-repo';
+import { VenueRepo } from '../lib/repositories/venue-repo';
 
 const repo = new VenueRepo();
 
 export class VenueController {
-    list() {
+    public list() {
         return repo.getAll();
     }
 }

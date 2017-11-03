@@ -1,4 +1,4 @@
-const BaseRepo = require("./base-repo");
+import { BaseRepo } from "./base-repo";
 
 export class VoteRepo extends BaseRepo {
     entityName = "vote";
