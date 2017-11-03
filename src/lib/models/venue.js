@@ -1,4 +1,6 @@
+const shortid = require("shortid");
+
 export class Venue {
-    venueId;
+    venueId = shortid.generate();
     name;
 }

@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/armature-corp/feedme#readme",
   "dependencies": {
-    "shortid": "^2.2.8"
+    "fetch": "^1.1.0",
+    "shortid": "^2.2.8",
+    "slumber-db": "0.0.2-beta"
   }
 }

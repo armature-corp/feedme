@@ -1,5 +1,7 @@
+const shortid = require("shortid");
+
 export class Vote {
-    voteId;
+    voteId = shortid.generate();
     feedingId;
     venueId;
 }
