@@ -9,15 +9,19 @@ server.run();
 export class BaseRepo {
     entityName;
 
+    getAll() {
+        return fetch(`http://localhost:8080/feedme/${entity_name}`, { method: "GET" });
+    }
+
     get(id) {
-        fetch(`http://localhost:8080/feedme/${entity_name}/${id}`, { method: "GET" });
+        return fetch(`http://localhost:8080/feedme/${entity_name}/${id}`, { method: "GET" });
     }
 
     create(item) {
-        fetch(`http://localhost:8080/feedme/${entity_name}/${item.id}`, { method: "POST", body: item });
+        return fetch(`http://localhost:8080/feedme/${entity_name}/${item.id}`, { method: "POST", body: item });
     }
 
     update(item) {
-        fetch(`http://localhost:8080/feedme/${entity_name}/${item.id}`, { method: "PUT", body: item });
+        return fetch(`http://localhost:8080/feedme/${entity_name}/${item.id}`, { method: "PUT", body: item });
     }
 }
