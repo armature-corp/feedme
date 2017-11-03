@@ -8,15 +8,15 @@ app.get('/api/feeding/list', function (req, res) {
     res.send( Controller.list() );
 });
 
-app.post('/api/feeding/start', function(req, res) {
+app.put('/api/feeding/start', function(req, res) {
     res.send( Controller.start() );
 });
 
-app.post('/api/feeding/vote', function(req, res) {
+app.put('/api/feeding/vote', function(req, res) {
     res.send( Controller.vote(req.body.venueId) );
 });
 
-app.post('/api/feeding/end', function(req, res) {
+app.put('/api/feeding/end', function(req, res) {
     res.send( Controller.end() );
 });
 
