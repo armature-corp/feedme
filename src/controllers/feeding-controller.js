@@ -1,29 +1,36 @@
 import { Feeding } from 'lib/models/feeding';
+import { FeedingResult } from 'lib/models/feeding-result';
 
 export class FeedingController {
     constructor() {
-        this.state = {
-            currentFeedingId: 1,
-            feedings: []
-        };
+        this.votes = [];
+        this.feeding = null;
     }
 
     start() {
         let instance = new Feeding();
-        instance.feedingId = this.state.currentInstanceId++;
-        this.state.feedings.push(instance);
+        instance.start = new Date();
         return instance.feedingId;
     }
     
     list() {
-        // TODO
+        return [
+            'Pei Wei',
+            'Urban BBQ',
+            'Subway',
+            'Thai Thai',
+            'Taco Bell'
+        ];
     }
     
-    vote(venueId) {
-        // TODO
+    vote(keyword) {
+        this.votes.push(keyword);
     }
     
     end() {
-        // TODO
+        let result = new FeedingResult();
+        result.feeding = this.feeding;
+        result.votes = this.votes;
+        return result;
     }
 }
