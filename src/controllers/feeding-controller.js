@@ -1,6 +1,8 @@
 var Feeding = require('../lib/models/feeding');
+var FeedingRepo = require('../lib/repositories/feeding-repo');
 var FeedingResult = require('../lib/models/feeding-result');
 
+var repo = new FeedingRepo();
 var FeedingController = function() {
     this.votes = [];
     this.feeding = null;
@@ -9,6 +11,8 @@ var FeedingController = function() {
 FeedingController.prototype.start = function() {
     this.feeding = new Feeding();
     this.feeding.start = new Date();
+
+    repo.create(feeding);
     return this.feedingId;
 };
 
