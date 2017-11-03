@@ -8,9 +8,9 @@ export class FeedingController {
     }
 
     start() {
-        let instance = new Feeding();
-        instance.start = new Date();
-        return instance.feedingId;
+        this.feeding = new Feeding();
+        this.feeding.start = new Date();
+        return this.feedingId;
     }
     
     list() {
