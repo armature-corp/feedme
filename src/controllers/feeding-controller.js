@@ -1,7 +1,7 @@
 var Feeding = require('../lib/models/feeding');
 var FeedingResult = require('../lib/models/feeding-result');
 
-FeedingController = function() {
+var FeedingController = function() {
     this.votes = [];
     this.feeding = null;
 }
@@ -32,3 +32,5 @@ FeedingController.prototype.end = function() {
     result.votes = this.votes;
     return result;
 };
+
+module.exports = FeedingController;

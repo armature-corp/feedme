@@ -1,4 +1,6 @@
-export class FeedingResult {
-    feeding;
-    votes;
-}
+var FeedingResult = function() {
+    this.feeding;
+    this.votes;
+};
+
+module.exports = FeedingResult;

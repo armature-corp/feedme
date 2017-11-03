@@ -1,7 +1,9 @@
 const shortid = require("shortid");
 
-export class Feeding {
-    feedingId = shortid.generate();
-    start;
-    end;
+var Feeding = function() {
+    this.feedingId = shortid.generate();
+    this.start;
+    this.end;
 }
+
+module.exports = Feeding;
