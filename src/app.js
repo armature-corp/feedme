@@ -1,22 +1,23 @@
 const express = require('express');
 const app = express();
 
-var FeedingController = require('controllers/feeding-controller');
+var FC = require('controllers/feeding-controller');
+var Controller = new FC();
 
 app.get('/api/feeding/list', function (req, res) {
-    res.send('list');
+    res.send( Controller.list() );
 });
 
 app.post('/api/feeding/start', function(req, res) {
-    res.send('start');
+    res.send( Controller.start() );
 });
 
 app.post('/api/feeding/vote', function(req, res) {
-    res.send('vote');
+    res.send( Controller.vote(req.body.venueId) );
 });
 
 app.post('/api/feeding/end', function(req, res) {
-    res.send('end');
+    res.send( Controller.end() );
 });
 
 app.listen(3000, function () {
