@@ -1,5 +1,5 @@
-import { Feeding } from 'lib/models/feeding';
-import { FeedingResult } from 'lib/models/feeding-result';
+var Feeding = require('../lib/models/feeding');
+var FeedingResult = require('../lib/models/feeding-result');
 
 export class FeedingController {
     constructor() {

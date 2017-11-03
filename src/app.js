@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-var FC = require('controllers/feeding-controller');
+var FC = require('./controllers/feeding-controller');
 var Controller = new FC();
 
 app.get('/api/feeding/list', function (req, res) {
