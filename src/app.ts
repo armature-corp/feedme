@@ -22,6 +22,6 @@ app.put('/api/feedings/end', function(req, res) {
     res.send(feedingController.end());
 });
 
-app.listen(8080, function() {
-    console.log('Feedme listening on port 8080!')
+app.listen(9500, function() {
+    console.log('Feedme listening on port 9500!')
 });
