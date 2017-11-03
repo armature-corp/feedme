@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/armature-corp/feedme/issues"
   },
-  "homepage": "https://github.com/armature-corp/feedme#readme"
+  "homepage": "https://github.com/armature-corp/feedme#readme",
+  "dependencies": {
+    "shortid": "^2.2.8"
+  }
 }
