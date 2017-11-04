@@ -1,25 +1,24 @@
 import {Feeding} from '../lib/models/feeding';
+import {Vote} from '../lib/models/vote';
 import {FeedingRepo} from '../lib/repositories/feeding-repo';
 import {FeedingResult} from '../lib/models/feeding-result';
 
 const repo = new FeedingRepo();
 
 export class FeedingController {
-    start() {
+    public start(): Promise<Feeding> {
         let feeding = new Feeding();
     
         feeding.start = new Date();
 
-        return repo
-            .create(feeding)
-            .then(result => result.feedinId);
+        return repo.create(feeding);
     }
     
-    vote(venueId: string) {
-        
+    public vote(venueId: string): Promise<Vote> {
+        throw new Error("// TODO");
     }
     
-    end() {
-        
+    public end(): Promise<Feeding> {
+        throw new Error("// TODO");
     }
 }

@@ -2,6 +2,7 @@ import * as express from "express";
 import { VenueController } from "./controllers/venue-controller";
 import { FeedingController } from "./controllers/feeding-controller";
 
+const port = process.env.PORT;
 const app = express();
 const venueController = new VenueController();
 const feedingController = new FeedingController();
@@ -22,6 +23,6 @@ app.put('/api/feedings/end', function(req, res) {
     res.send(feedingController.end());
 });
 
-app.listen(9500, function() {
-    console.log('Feedme listening on port 9500!')
+app.listen(port, function() {
+    console.log(`Feedme listening on port ${port}!`)
 });

@@ -1,5 +1,6 @@
 import { BaseRepo } from "./base-repo";
+import { Vote } from "../models/vote";
 
-export class VoteRepo extends BaseRepo {
-    entityName = "vote";
+export class VenueRepo extends BaseRepo<Vote> {
+    public entityName: string = "vote";
 }
